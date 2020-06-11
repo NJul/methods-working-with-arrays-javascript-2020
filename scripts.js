@@ -18,3 +18,36 @@ Alice
 Anna
 Mary 
 */
+
+// 2.
+// filter()
+console.log(
+  '2. filter() Этот метод принимает функцию в качестве параметра и возвращает новый массив, содержащий все элементы массива, для которого функция фильтрации передавалась в качестве аргумента, и возвращает ее со значением true.'
+);
+/* Этот метод принимает функцию в качестве параметра и возвращает новый массив, содержащий все элементы массива, для которого функция фильтрации передавалась в качестве аргумента, и возвращает ее со значением true. */
+
+const myAwesomeArray2 = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Anna' },
+  { id: 3, name: 'Mary' },
+  { id: 4, name: 'Kirill' },
+  { id: 5, name: 'Kirill' },
+];
+
+const arr2 = myAwesomeArray2.filter((element) => element.name === 'Kirill');
+
+/* Output:
+(2) [{…}, {…}]
+0: {id: 4, name: "Kirill"}
+1: {id: 5, name: "Kirill"}
+length: 2
+
+false
+false
+false
+true
+true
+*/
+
+console.log(arr2);
+console.log(myAwesomeArray2);
