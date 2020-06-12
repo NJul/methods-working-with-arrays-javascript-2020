@@ -207,3 +207,29 @@ console.log(findIndex83);
 /* Output:
 0
 */
+
+// 9.
+// find()
+console.log(
+  '9. find() Этот метод принимает функцию в качестве аргумента и в дальнейшем применяет ее к массиву. Он возвращает значение первого найденного в массиве элемента, если элемент удовлетворяет условию проверяющей функции. В противном случае возвращается undefined'
+);
+
+/* find() Этот метод принимает функцию в качестве аргумента и в дальнейшем применяет ее к массиву. Он возвращает значение первого найденного в массиве элемента, если элемент удовлетворяет условию проверяющей функции. В противном случае возвращается undefined
+ */
+
+/* const myAwesomeArray = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Anna' },
+  { id: 3, name: 'Mary' },
+]; ↑ */
+const find9 = myAwesomeArray.find((element) => element.id === 3);
+console.log(find9);
+/* Output:
+{id: 3, name: "Mary"}
+*/
+
+const find92 = myAwesomeArray.find((element) => element.id === 5);
+console.log(find92);
+/* Output:
+undefined
+*/
