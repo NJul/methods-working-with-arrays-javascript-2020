@@ -178,3 +178,32 @@ console.log(every72);
 /* Output:
 true
 */
+
+// 8.
+// findIndex()
+console.log(
+  '8. findIndex() Этот метод принимает функцию в качестве параметра и в дальнейшем применяет ее к массиву. Метод findIndex не изменяет массив, для которого он был вызван. Он возвращает индекс найденного элемента, если элемент удовлетворяет условию проверяющей функции, переданной в качестве аргумента. Если не удовлетворяет, возвращается -1'
+);
+
+/* findIndex() Этот метод принимает функцию в качестве параметра и в дальнейшем применяет ее к массиву. Метод findIndex не изменяет массив, для которого он был вызван. Он возвращает индекс найденного элемента, если элемент удовлетворяет условию проверяющей функции, переданной в качестве аргумента. Если не удовлетворяет, возвращается -1
+ */
+
+// const myAwesomeArray7 = ['a', 'b', 'c', 'd', 'e']; ↑
+const findIndex8 = myAwesomeArray7.findIndex((element) => element === 'e');
+console.log(findIndex8);
+/* Output:
+4
+*/
+
+const findIndex82 = myAwesomeArray7.findIndex((element) => element === 'f');
+console.log(findIndex82);
+/* Output:
+-1
+*/
+
+// const myAwesomeArray72 = ['a', 'a', 'a', 'a', 'a']; ↑
+const findIndex83 = myAwesomeArray72.findIndex((element) => element === 'a');
+console.log(findIndex83);
+/* Output:
+0
+*/
