@@ -292,3 +292,31 @@ console.log(concat11);
 /* Output:
 (15) [1, 2, 3, 4, 5, 1, "2 Letter", "Letter", "a", "b", "c", "d", "e", "letter", 17]
 */
+
+// 12.
+// fill()
+console.log(
+  '12. fill() Этот метод заполняет все элементы массива одинаковым значением, от начального индекса (по умолчанию 0) до конечного индекса (по умолчанию array.length). Возвращаемое значение - измененный массив'
+);
+
+/* fill() Этот метод заполняет все элементы массива одинаковым значением, от начального индекса (по умолчанию 0) до конечного индекса (по умолчанию array.length). Возвращаемое значение - измененный массив
+ */
+
+console.log(concat11);
+/* 
+concat11 
+(15) [1, 2, 3, 4, 5, 1, "2 Letter", "Letter", "a", "b", "c", "d", "e", "letter", 17]
+↑ */
+
+// The first argument (0) is the value
+// The second argument (2) is the starting index
+// The third argument (7) is the ending index
+const fill12 = concat11.fill(0, 2, 7);
+console.log(fill12);
+/* Output:
+(15) [1, 2, 0, 0, 0, 0, 0, "Letter", "a", "b", "c", "d", "e", "letter", 17]
+*/
+console.log(concat11);
+/* Output:
+(15) [1, 2, 0, 0, 0, 0, 0, "Letter", "a", "b", "c", "d", "e", "letter", 17]
+*/
