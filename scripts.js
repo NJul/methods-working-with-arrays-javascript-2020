@@ -1,4 +1,5 @@
 // https://dev.to/ibrahima92/15-must-know-javascript-array-methods-in-2020-1kd8
+// https://gist.github.com/joyrexus/7366429
 
 // 0.
 /*
@@ -102,6 +103,11 @@ console.log(myAwesomeArray4);
 (8) [1, 2, 3, 4, 5, 6, 7, 8]
 (4) [Array(2), Array(2), 5, Array(2)]
 */
+
+let myAwesomeArray42 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+console.log(myAwesomeArray42);
+let flat42 = myAwesomeArray42.flat(Infinity); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(flat42);
 
 // 5.
 // map()
