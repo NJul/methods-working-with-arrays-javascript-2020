@@ -233,3 +233,43 @@ console.log(find92);
 /* Output:
 undefined
 */
+
+// 10.
+// sort()
+console.log(
+  '10. sort() Этот метод принимает функцию в качестве параметра. Он сортирует элементы массива и возвращает их'
+);
+
+/* sort() Этот метод принимает функцию в качестве параметра. Он сортирует элементы массива и возвращает их'
+ */
+
+/* const myAwesomeArray6 = [1, 2, 3, 4, 5]; ↑ */
+console.log(myAwesomeArray6);
+// Сортировать от самого большого до самого маленького
+myAwesomeArray6.sort((a, b) => b - a);
+/* Output:
+[5, 4, 3, 2, 1]
+*/
+console.log(myAwesomeArray6);
+
+// Сортировать от наименьшего к наибольшему
+myAwesomeArray6.sort((a, b) => a - b);
+/* Output:
+[1, 2, 3, 4, 5]
+*/
+console.log(myAwesomeArray6);
+
+// const myAwesomeArray7 = ['a', 'b', 'c', 'd', 'e']; ↑
+console.log(myAwesomeArray7);
+
+myAwesomeArray7.push('2 Letter', 'letter', 'Letter', 1);
+console.log(myAwesomeArray7);
+/* Output:
+(9) ["a", "b", "c", "d", "e", "2 Letter", "letter", "Letter", 1]
+*/
+
+myAwesomeArray7.sort();
+console.log(myAwesomeArray7);
+/* Output:
+(9) [1, "2 Letter", "Letter", "a", "b", "c", "d", "e", "letter"]
+*/
