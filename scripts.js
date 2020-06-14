@@ -326,3 +326,25 @@ console.log(concat11);
 /* Output:
 (15) [1, 2, 0, 0, 0, 0, 0, "Letter", "a", "b", "c", "d", "e", "letter", 17]
 */
+
+// 13.
+// includes()
+console.log(
+  '13. includes() Этот метод возвращает значение true, есил массив содержит определенный элемент, и значение false - если нет'
+);
+
+/* includes() Этот метод возвращает значение true, есил массив содержит определенный элемент, и значение false - если нет */
+
+console.log(myAwesomeArray6);
+// (5) [1, 2, 3, 4, 5] ↑
+const myAwesomeArray13 = myAwesomeArray6.includes(3);
+console.log(myAwesomeArray13);
+/* Output:
+true
+*/
+
+const myAwesomeArray132 = myAwesomeArray6.includes(8);
+console.log(myAwesomeArray132);
+/* Output:
+false
+*/
