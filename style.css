@@ -14,8 +14,23 @@ body {
   font-family: Raleway;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.col {
+  flex: 1;
+}
+
 .section-header {
-  padding: 1.5em 0.5em 0.5em 0.5em;
+  padding: 1.5em 0.5em 0.7em 0.5em;
   font-family: "Metal Mania";
   font-weight: normal;
   color: rgba(106, 101, 114, 0.74);
@@ -24,7 +39,19 @@ body {
 }
 
 .method-list {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1.5em;
+  padding: 0 20%;
+}
+
+.numeral {
+  color: rgb(140, 187, 178);
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .method-list {
+    padding: 0.1em 1em 0.1em 2em;
+  }
 }

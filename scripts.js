@@ -1,5 +1,6 @@
 // https://dev.to/ibrahima92/15-must-know-javascript-array-methods-in-2020-1kd8
 // https://gist.github.com/joyrexus/7366429
+// https://github.com/NJul/methods-working-with-arrays-javascript-2020
 
 // 0.
 /*
@@ -385,3 +386,48 @@ console.log(flatMap152);
 
 console.log([1, 2, 3, 4].flat(1).map((x) => [x * 2]));
 // [[2], [4], [6], [8]]
+
+// 16.
+// splice()
+console.log(
+  '16. splice() Этот метод изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые. Возвращаемое значение: массив, содержащий удаленные элементы. Если будет удален только один элемент, вернется массив из одного элемента. Если никакие элементы не будут удалены, вернется пустой массив. Если количество уазанных вставляемых элементов будет отличным от количества удаляемых элементов, массив изменит длину после вызова. Параметр start если отрицателен, указывает индекс элемента с конца'
+);
+
+/* splice() Этот метод изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые. Возвращаемое значение: массив, содержащий удаленные элементы. Если будет удален только один элемент, вернется массив из одного элемента. Если никакие элементы не будут удалены, вернется пустой массив. Если количество уазанных вставляемых элементов будет отличным от количества удаляемых элементов, массив изменит длину после вызова. Параметр start если отрицателен, указывает индекс элемента с конца */
+
+// Удаляет 0 элементов по индексу 2 и вставляет "drum"
+let myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+console.log(myFish);
+// (4) ["angel", "clown", "mandarin", "sturgeon"]
+let removed = myFish.splice(2, 0, 'drum');
+console.log(myFish);
+// (5) ["angel", "clown", "drum", "mandarin", "sturgeon"]
+console.log(removed);
+// []
+
+// Удаляет 1 элемент по индексу 3
+console.log(myFish);
+// (5) ["angel", "clown", "drum", "mandarin", "sturgeon"]
+removed = myFish.splice(3, 1);
+console.log(myFish);
+// (4) ["angel", "clown", "drum", "sturgeon"]
+console.log(removed);
+// ["mandarin"]
+
+// Удаляет 1 элемент по индексу 2 и вставляет "trumpet"
+console.log(myFish);
+// (4) ["angel", "clown", "drum", "sturgeon"]
+removed = myFish.splice(2, 1, 'trumpet');
+console.log(myFish);
+// (4) ["angel", "clown", "trumpet", "sturgeon"]
+console.log(removed);
+// ["drum"]
+
+// Удаляет 1 элемент по индексу -2 с конца
+console.log(myFish);
+// (4) ["angel", "clown", "trumpet", "sturgeon"]
+removed = myFish.splice(-2, 1);
+console.log(myFish);
+// (3) ["angel", "clown", "sturgeon"]
+console.log(removed);
+// ["trumpet"]
